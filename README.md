@@ -19,11 +19,10 @@ Just enter your wallet address, and let it quietly turn your idle computer time 
 
 ## Features
 
-- **Optimized Engine:** High-performance RandomX CPU mining powered directly by the latest XMRig engine.
-- **Modern Interface:** A gorgeous, native-feeling GUI built with PyQt6 featuring real-time hashrate graphs and hardware monitoring.
-- **Background Mode:** Minimizes securely to the system tray, running silently in the background without interrupting your workflow.
-- **Secure Sandboxing:** Distributed as a Flatpak to ensure strict system security, memory safety, and seamless updates.
-- **Free and Open Source:** Transparent, lightweight, and community-driven.
+- ⚡️ **Optimized Engine:** High-performance RandomX CPU mining powered directly by the latest XMRig engine.
+- 🎨 **Modern Interface:** A gorgeous, native-feeling GUI built with PyQt6 featuring real-time hashrate graphs and hardware monitoring.
+- 📦 **Background Mode:** Minimizes securely to the system tray, running silently in the background without interrupting your workflow.
+- ❤️ **Free and Open Source:** Transparent, lightweight, and community-driven.
 
 ## Powered by XMRig
 
