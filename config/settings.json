@@ -1,0 +1,8 @@
+{
+    "worker_name": "LinuxRig",
+    "wallets": {
+        "ethereum-classic": "",
+        "monero": ""
+    },
+    "pool": "Auto (Closest)"
+}

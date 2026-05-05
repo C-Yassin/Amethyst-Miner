@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Amethyst Miner
+Comment=An automated Monero background miner.
+Exec=start-amethyst
+Icon=AmethystMiner
+Terminal=false
+Categories=Utility;System;Network;
+Keywords=crypto;miner;monero;xmr;xmrig;amethyst;
+StartupNotify=false
