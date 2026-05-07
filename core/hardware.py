@@ -1,4 +1,4 @@
-import os
+import os, sys
 import re
 import subprocess
 import signal
@@ -6,7 +6,7 @@ from datetime import datetime
 
 from PyQt6.QtCore import QThread, QObject, pyqtSignal, QTimer
 from PyQt6.QtGui import QCursor
-from config.config_manager import is_flatpak_env, MINER_DIR
+from config.config_manager import is_flatpak_env, CORE_DIR, MINER_DIR
 
 class MinerSetupThread(QThread):
     result_signal = pyqtSignal(bool)
@@ -63,7 +63,7 @@ class MinerManager(QObject):
         self.is_running = False
 
     def get_binary_path(self): 
-        return "/app/bin/xmrig" if is_flatpak_env else os.path.join(MINER_DIR, "xmrig_custom", "xmrig")
+        return "/app/bin/xmrig" if is_flatpak_env else os.path.join(CORE_DIR, "xmrig.exe") if os.name == "nt" else os.path.join(MINER_DIR, "xmrig_custom", "xmrig") 
 
     def ensure_downloaded(self) -> bool:
         bin_path = self.get_binary_path()
@@ -172,9 +172,15 @@ class MinerManager(QObject):
         ]
 
         try:
+            kwargs = {}
+            if sys.platform == 'win32':
+                kwargs.update(creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
+            else:
+                kwargs.update(preexec_fn=os.setsid)
+
             self._proc = subprocess.Popen(
                 cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, 
-                text=True, preexec_fn=os.setsid, bufsize=1
+                text=True, bufsize=1, **kwargs
             )
             self._thread = MinerOutputThread(self._proc)
             self._thread.hashrate_signal.connect(self.hashrate_updated.emit)
