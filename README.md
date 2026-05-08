@@ -28,6 +28,34 @@ Just enter your wallet address, and let it quietly turn your idle computer time 
 
 Amethyst Miner acts as a graphical and automation wrapper around **XMRig**, the industry-standard CPU miner for Monero. 
 
+## Install
+### Flatpak
+```bash
+# soon
+```
+### Arch Linux (AUR)
+```bash
+# soon
+```
+### Source Code
+```bash
+git clone https://github.com/C-Yassin/AmethystMiner.git
+cd AmethystMiner
+python3 main.py
+```
+Because We compile XMRig inside it we need the required tools:
+
+### For Debian or Ubuntu (APT)
+```bash
+sudo apt update
+sudo apt install cmake libhwloc-dev libssl-dev
+```
+
+### For Arch Linux (Pacman)
+```bash
+sudo pacman -Syu
+sudo pacman -S cmake hwloc openssl
+```
 If you want to dive deeper into how the mining algorithms work, understand specific CPU optimizations (like MSR mods and Huge Pages), or tweak advanced networking parameters, check out the official documentation:
 - 📖 [XMRig Official Documentation](https://xmrig.com/docs)
 - 🛠️ [RandomX Algorithm Details](https://xmrig.com/docs/algorithms/randomx)
