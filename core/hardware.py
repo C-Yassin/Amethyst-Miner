@@ -174,7 +174,8 @@ class MinerManager(QObject):
         try:
             kwargs = {}
             if sys.platform == 'win32':
-                kwargs.update(creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
+                flags = subprocess.CREATE_NEW_PROCESS_GROUP | subprocess.CREATE_NO_WINDOW
+                kwargs.update(creationflags=flags)
             else:
                 kwargs.update(preexec_fn=os.setsid)
 
