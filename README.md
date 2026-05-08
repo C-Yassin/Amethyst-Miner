@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/C-Yassin/AmethystMiner" target="_blank">
-    <img src="https://github.com/C-Yassin/Amethyst-Miner/blob/main/gui/logo.svg" alt="Amethyst Miner Logo">
+    <img src="https://raw.githubusercontent.com/C-Yassin/Amethyst-Miner/6b3ae3b40d78588116eef257f2011055c34e676d/gui/logo.svg" alt="Amethyst Miner Logo">
   </a>
 </div>
 <p align="center">
