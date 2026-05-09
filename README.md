@@ -31,7 +31,7 @@ Amethyst Miner acts as a graphical and automation wrapper around **XMRig**, the 
 ## Install
 ### Flatpak
 ```bash
-# soon
+flatpak install flathub io.github.C_Yassin.AmethystMiner
 ```
 ### Arch Linux (AUR)
 ```bash
