@@ -4,7 +4,7 @@
   </a>
 </div>
 <p align="center">
-  <a href="#"><img alt="Flathub" src="https://img.shields.io/badge/Flathub-Available-purple?logo=flatpak"></a>
+  <a href="https://flathub.org/en/apps/io.github.C_Yassin.AmethystMiner"><img alt="Flathub" src="https://img.shields.io/badge/Flathub-Available-purple?logo=flatpak"></a>
   <a href="#">
     <img alt="AUR Package" src="https://img.shields.io/aur/version/amethyst-miner?color=purple&label=AUR&logo=arch-linux">
   </a>
