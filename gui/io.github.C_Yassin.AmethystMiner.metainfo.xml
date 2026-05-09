@@ -4,7 +4,7 @@
     <metadata_license>FSFAP</metadata_license>
     <project_license>MIT</project_license>
     <name>Amethyst Miner</name>
-    <summary>High-performance Monero (XMR) GUI CPU miner</summary>
+    <summary>Mine Monero with high performance</summary>
     
     <description>
         <p>Mine Monero with elegance. Amethyst Miner is a high-performance RandomX CPU miner wrapped in a beautiful, native GUI, allowing you to maximize your hash rate without touching the command line.</p>
