@@ -58,7 +58,7 @@ sudo pacman -S cmake hwloc openssl
 ```
 If you want to dive deeper into how the mining algorithms work, understand specific CPU optimizations (like MSR mods and Huge Pages), or tweak advanced networking parameters, check out the official documentation:
 - 📖 [XMRig Official Documentation](https://xmrig.com/docs)
-- 🛠️ [RandomX Algorithm Details](https://xmrig.com/docs/algorithms/randomx)
+- 🛠️ [RandomX Algorithm Details](https://xmrig.com/docs/algorithms)
 
 ## Bug Report & Feedback
 If you encounter any bugs, crashes, or unintended behavior, please report them via the GitHub Issues section. Provide as much context as possible (OS, desktop environment, and terminal logs) so they can be fixed quickly.
