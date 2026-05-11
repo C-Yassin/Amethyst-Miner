@@ -11,7 +11,7 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                               QTimeEdit, QGroupBox, QSizePolicy, QSystemTrayIcon, QMenu)
 from PyQt6.QtGui import QCursor, QPainter, QColor, QAction, QPixmap, QIcon
 from PyQt6.QtSvg import QSvgRenderer
-from config.config_manager import GUI_DIR, load_config, save_config, get_icon_path
+from config.config_manager import GUI_DIR, load_config, save_config, get_icon_path, is_flatpak_env
 from gui.gui_manager import TickCheckBox, PremiumLineChart
 from core.hardware import MinerManager, AutomationManager
 from core.api_manager import PoolApiThread 
@@ -689,7 +689,7 @@ if __name__ == "__main__":
     icon_pixmap = QPixmap(256, 256)
     icon_pixmap.fill(Qt.GlobalColor.transparent)
     
-    renderer = QSvgRenderer(get_icon_path("amethyst.svg"))
+    renderer = QSvgRenderer(get_icon_path("amethyst-flatpak-icon.svg" if is_flatpak_env else "amethyst.svg"))
     painter = QPainter(icon_pixmap)
     painter.setRenderHint(QPainter.RenderHint.Antialiasing)
     renderer.render(painter)
