@@ -1,4 +1,4 @@
-import os, sys
+import os, sys, hashlib, uuid
 import re
 import subprocess
 import signal
