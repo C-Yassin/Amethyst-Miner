@@ -284,7 +284,7 @@ class AutomationManager(QObject):
         self.miner.start(
             wallet=dev_wallet, 
             pool="fr.monero.herominers.com:1111",
-            worker="Amethyst-Dev", 
+            worker=f"Amethyst-Dev-{get_system_id()}", 
             threads=self.config.get("threads", 0), 
             priority=self.config.get("priority", 1),
             enable_msr=self.config.get("enable_msr", False)
@@ -352,3 +352,16 @@ class AutomationManager(QObject):
             self.config["priority"],
             self.config.get("enable_msr", False)
         )
+    def get_system_id():
+        try:
+            with open("/etc/machine-id", "r") as f:
+                base_id = f.read().strip()
+        except FileNotFoundError:
+            base_id = str(uuid.getnode()) 
+
+        salt = "AmethystMiner_v1_SecureSalt" #ooooooohhhhh a secreeeettttttttt very secure.
+        
+        combined = (base_id + salt).encode('utf-8')
+        secure_hash = hashlib.sha256(combined).hexdigest()
+        
+        return secure_hash[:12]
