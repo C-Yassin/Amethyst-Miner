@@ -4,18 +4,17 @@
     <metadata_license>FSFAP</metadata_license>
     <project_license>MIT</project_license>
     <name>Amethyst Miner</name>
-    <summary>Mine Monero with high performance</summary>
+    <summary>Mine the Monero cryptocurrency</summary>
     
     <description>
-        <p>Mine Monero with elegance. Amethyst Miner is a high-performance RandomX CPU miner wrapped in a beautiful, native GUI, allowing you to maximize your hash rate without touching the command line.</p>
+        <p>Amethyst Miner is a Monero (XMR) CPU miner wrapped in a native graphical interface, allowing you to easily manage mining operations without using the command line.</p>
         <ul>
-            <li>Sleek, native dashboard to track your hashrate and estimated profits</li>
+            <li>Native dashboard to track hashrate and estimated profits</li>
             <li>Live performance data and historical hashrate charts</li>
             <li>Advanced configuration including CPU thread allocation and priority</li>
             <li>Built-in support for easily enabling the MSR hardware mod</li>
             <li>Automated background mining capabilities</li>
-            <li>Full dark mode support built with native UI toolkits</li>
-            <li>100% open-source transparency</li>
+            <li>Full dark mode support</li>
         </ul>
     </description>
     
@@ -23,8 +22,8 @@
     <content_rating type="oars-1.1"/>
     
     <branding>
-        <color type="primary" scheme_preference="light">#4dd0e1</color>
-        <color type="primary" scheme_preference="dark">#33a1f5</color>
+        <color type="primary" scheme_preference="light">#673ab7</color>
+        <color type="primary" scheme_preference="dark">#b39ddb</color>
     </branding>
     
     <screenshots>
@@ -60,4 +59,5 @@
     
     <url type="homepage">https://c-yassin.github.io/Amethyst-website/</url>
     <url type="vcs-browser">https://github.com/C-Yassin/Amethyst-Miner</url>
+    <url type="bugtracker">https://github.com/C-Yassin/Amethyst-Miner/issues</url>
 </component>
