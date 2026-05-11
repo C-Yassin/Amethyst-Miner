@@ -63,7 +63,8 @@ class MinerManager(QObject):
         self.is_running = False
 
     def get_binary_path(self): 
-        return "/app/bin/xmrig" if is_flatpak_env else os.path.join(CORE_DIR, "xmrig.exe") if os.name == "nt" else os.path.join(MINER_DIR, "xmrig_custom", "xmrig") 
+        aur_path = os.path.join(CORE_DIR, "xmrig")
+        return aur_path if os.path.exists(aur_path) else "/app/bin/xmrig" if is_flatpak_env else os.path.join(CORE_DIR, "xmrig.exe") if os.name == "nt" else os.path.join(MINER_DIR, "xmrig_custom", "xmrig") 
 
     def ensure_downloaded(self) -> bool:
         bin_path = self.get_binary_path()
