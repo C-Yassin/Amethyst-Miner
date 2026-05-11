@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="128.00002"
-   height="127.99999"
-   viewBox="0 0 33.866671 33.866665"
+   width="256"
+   height="256"
+   viewBox="0 0 67.733334 67.733334"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
-   sodipodi:docname="app-icon-grid.svg"
+   sodipodi:docname="amethyst-flatpak-icon.svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="4"
-     inkscape:cx="23.875"
-     inkscape:cy="92.375"
+     inkscape:zoom="1"
+     inkscape:cx="-77.5"
+     inkscape:cy="304.5"
      inkscape:window-width="1920"
      inkscape:window-height="1012"
      inkscape:window-x="0"
@@ -141,10 +141,10 @@
          stop-opacity=".3"
          id="stop17" /></radialGradient><filter
        id="a"
-       x="80.1"
+       x="80.099998"
        y="37"
-       width="351.1"
-       height="443.2"
+       width="351.10001"
+       height="443.20001"
        filterUnits="userSpaceOnUse"
        color-interpolation-filters="sRGB"><feFlood
          flood-opacity="0"
@@ -153,7 +153,8 @@
          in="SourceGraphic"
          in2="BackgroundImageFix"
          result="shape"
-         id="feBlend17" /><feGaussianBlur
+         id="feBlend17"
+         mode="normal" /><feGaussianBlur
          stdDeviation="6.5"
          result="effect1_foregroundBlur_744_9191"
          id="feGaussianBlur17" /></filter><linearGradient
@@ -172,7 +173,7 @@
          id="stop2-7" /></linearGradient><linearGradient
        id="h-5"
        x1="203.961"
-       y1="82.369"
+       y1="82.369003"
        x2="356.931"
        y2="235.339"
        gradientTransform="matrix(0.0492,0,0,0.14213,3.232,-1.758)"
@@ -209,7 +210,7 @@
        x1="482.991"
        y1="22.361"
        x2="482.991"
-       y2="156.525"
+       y2="156.52499"
        gradientTransform="matrix(0.03116,0,0,0.22438,3.232,-1.758)"
        gradientUnits="userSpaceOnUse"><stop
          offset="0"
@@ -222,7 +223,7 @@
        xlink:href="#a-6"
        id="j"
        x1="183.347"
-       y1="94.742"
+       y1="94.741997"
        x2="183.347"
        y2="105.967"
        gradientTransform="matrix(0.03547,0,0,0.19708,3.232,-1.758)"
@@ -230,7 +231,7 @@
        xlink:href="#a-6"
        id="i-6"
        x1="128.996"
-       y1="167.447"
+       y1="167.44701"
        x2="128.996"
        y2="248.069"
        gradientTransform="matrix(0.05186,0,0,0.13483,3.232,-1.758)"
@@ -240,13 +241,13 @@
        x1="122.202"
        y1="91.652"
        x2="213.854"
-       y2="183.303"
+       y2="183.30299"
        gradientTransform="matrix(0.05474,0,0,0.12773,3.232,-1.758)"
        gradientUnits="userSpaceOnUse" /><linearGradient
        xlink:href="#b-1"
        id="e-6"
-       x1="97.84"
-       y1="27.596"
+       x1="97.839996"
+       y1="27.596001"
        x2="217.423"
        y2="147.179"
        gradientTransform="matrix(0.07692,0,0,0.0909,3.232,-1.758)"
@@ -258,7 +259,7 @@
        x1="183.347"
        y1="105.967"
        x2="183.347"
-       y2="94.742" /><linearGradient
+       y2="94.741997" /><linearGradient
        xlink:href="#c-3"
        id="l"
        gradientUnits="userSpaceOnUse"
@@ -266,14 +267,14 @@
        x1="183.347"
        y1="105.967"
        x2="183.347"
-       y2="94.742" /></defs><g
+       y2="94.741997" /></defs><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-32.279167,-138.64166)"><g
        style="fill:none"
        id="g1"
-       transform="matrix(0.05374349,0,0,0.05374349,35.454167,141.81666)"><rect
+       transform="matrix(0.13229167,0,0,0.13229167,32.279167,138.64166)"><rect
          id="logo-bg"
          fill="#262626"
          width="512"
@@ -281,9 +282,10 @@
          rx="100"
          x="0"
          y="0"
-         inkscape:label="background" /><g
+         inkscape:label="background"
+         style="fill:#1e1d22;fill-opacity:1" /><g
          id="g2"
-         transform="matrix(14.648659,0,0,14.648659,17.700356,7.0315399)"><path
+         transform="matrix(14.648659,0,0,14.648659,13.700356,7.0315399)"><path
            fill="#9d76d4"
            d="M 18.284,33.362 14.103,31.69 9.922,20.82 10.758,9.949 l 4.18,-9.199 5.018,2.508 2.509,6.69 v 16.724 z"
            id="path10" /><path
